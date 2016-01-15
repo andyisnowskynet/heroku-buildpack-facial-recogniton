@@ -1,12 +1,13 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-BUILD_DIR=$1
-
+# 
+# BUILD_DIR=$1
+# 
 echo "BUILD DIR!!!!!!!!!"
-echo BUILD_DIR
-# Exit early if app is clearly not Python.
-# if [ ! -f $BUILD_DIR/requirements.txt ]; then
-#   exit 1
-# fi
-
-echo Python
+# echo BUILD_DIR
+# # Exit early if app is clearly not Python.
+# # if [ ! -f $BUILD_DIR/requirements.txt ]; then
+# #   exit 1
+# # fi
+# 
+# echo Python

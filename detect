@@ -2,6 +2,8 @@
 
 BUILD_DIR=$1
 
+echo "BUILD DIR!!!!!!!!!"
+echo BUILD_DIR
 # Exit early if app is clearly not Python.
 if [ ! -f $BUILD_DIR/requirements.txt ]; then
   exit 1

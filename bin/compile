@@ -7,9 +7,13 @@ indent() {
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo "WHATS UP!???!?!?!?"
+echo BUILD_DIR
+echo CACHE_DIR
+
 APP_DIR="/app"
 
-mkdir ~/.heroku/vendor
-cd ~/.heroku/vendor
-curl -O https://github.com/andyisnowskynet/cmake-buildpack-tar/blob/master/cmake-3.4.1-heroku.tar.gz?raw=true
+mkdir /app/.heroku/vendor
+cd /app/.heroku/vendor
+curl -s -L "https://github.com/andyisnowskynet/cmake-buildpack-tar/blob/master/cmake-3.4.1-heroku.tar.gz?raw=true"
 tar -xvzf cmake-3.4.1-heroku.tar.gz

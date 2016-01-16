@@ -17,7 +17,8 @@ tar -xzf $CACHE_DIR/cmake-3.4.1-heroku.tar.gz -C $BUILD_DIR
 
 echo "AWESOME"
 echo $PATH
-PATH=/app/.heroku/vendor/bin:$PATH
+export PATH=$BUILD_DIR/.heroku/vendor/bin:$PATH
+
 set-env PATH '$HOME/.heroku/vendor/bin:$PATH'
 
 echo "AFTER"

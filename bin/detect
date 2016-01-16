@@ -1,7 +1,6 @@
 #!/bin/sh
 
-
-echo "detecting.... oh wait this will always detect."
+echo "Building facial recognition package"
 exit 0
 # # this pack is valid for apps with a hello.txt in the root
 # if [ -f $1/hello.txt ]; then

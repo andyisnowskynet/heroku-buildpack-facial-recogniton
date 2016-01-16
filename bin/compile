@@ -15,8 +15,10 @@ APP_DIR="/app"
 curl -s -L "https://raw.github.com/andyisnowskynet/cmake-buildpack-tar/master/cmake-3.4.1-heroku.tar.gz" > $CACHE_DIR/cmake-3.4.1-heroku.tar.gz
 tar -xzf $CACHE_DIR/cmake-3.4.1-heroku.tar.gz -C $BUILD_DIR
 
-
+echo "AWESOME"
+echo $PATH
 export PATH=/app/.heroku/vendor/bin:$PATH
-
+echo "AFTER"
+echo $PATH
 #curl -O https://github.com/andyisnowskynet/cmake-buildpack-tar/blob/master/cmake-3.4.1-heroku.tar.gz?raw=true
 #tar -xvzf cmake-3.4.1-heroku.tar.gz

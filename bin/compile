@@ -17,7 +17,7 @@ echo "DOWNLOADING"
 # download and unpack opencv binary
 curl -s -L "https://raw.github.com/andyisnowskynet/opencvtar/master/opencv.tar.gz" > $CACHE_DIR/opencv.tar.gz
 echo "UNTARING"
-tar -xzf $CACHE_DIR/opencv.tar.gz -C $BUILD_DIR
+tar -xzf $CACHE_DIR/opencv.tar.gz -C $BUILD_DIR/.heroku/vendor/
 
 # set the PATH for binaries
 cat > $BUILD_DIR/.profile.d/facial_recognition_path.sh <<EOF

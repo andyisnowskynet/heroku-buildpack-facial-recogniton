@@ -21,7 +21,7 @@ tar -xzf $CACHE_DIR/cmake-3.4.1-heroku.tar.gz -C $BUILD_DIR
 # mkdir -p $BUILD_DIR/.profile.d
 # touch $BUILD_DIR/.profile.d/facial_recognition.sh
 cat > $BUILD_DIR/.profile.d/facial_recognition_path.sh <<EOF
-export PATH="$BUILD_DIR/.heroku/vendor/bin:$PATH"
+export PATH="$APP_DIR/.heroku/vendor/bin:$PATH"
 EOF
 #curl -O https://github.com/andyisnowskynet/cmake-buildpack-tar/blob/master/cmake-3.4.1-heroku.tar.gz?raw=true
 #tar -xvzf cmake-3.4.1-heroku.tar.gz

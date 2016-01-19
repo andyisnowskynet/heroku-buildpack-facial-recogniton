@@ -21,5 +21,5 @@ tar -xzf $CACHE_DIR/opencv.tar.gz -C $BUILD_DIR/.heroku/vendor/
 
 # set the PATH for binaries
 cat > $BUILD_DIR/.profile.d/facial_recognition_path.sh <<EOF
-export PATH="$APP_DIR/.heroku/vendor/bin:$PATH"
+export PATH="$APP_DIR/.heroku/vendor/bin:$APP_DIR/.heroku/vendor/opencv:$PATH"
 EOF

@@ -17,9 +17,9 @@ tar -xzf $CACHE_DIR/cmake-3.4.1-heroku.tar.gz -C $BUILD_DIR
 
 #export PATH=$BUILD_DIR/.heroku/vendor/bin:$PATH
 
-
-mkdir -p /app/.profile.d
-touch /app/.profile.d/facial_recognition.sh
+touch $BUILD_DIR/cool.txt
+mkdir -p $BUILD_DIR/.profile.d
+touch $BUILD_DIR/.profile.d/facial_recognition.sh
 # cat > .profile.d/facial_recognition_path.sh <<EOF
 # export PATH="$BUILD_DIR/.heroku/vendor/bin:$PATH"
 # EOF
